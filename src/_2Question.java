@@ -11,11 +11,11 @@
 
 public class _2Question {
     public static void main(String[] args) {
-        int start = 1; // should start at 1
+        int start = 0; // should start at 1
         int sum = 0; // variable to store the sum of the numbers
-        final int upperBound = 100;
+        final int upperBound = 11;
 
-        while(start++ <= upperBound) {
+        while(start++ < upperBound) {
             sum+=start;
         }
         System.out.println(sum);
