@@ -5,15 +5,17 @@
  * If upper bound is 100, sum should be 1 + 2 + ... + 100 = 5050.
  *
  * You should use while loop.
+ *
+ * @author Udayan Khattry
  */
 
 public class _2Question {
     public static void main(String[] args) {
-        int start = 0;
-        int sum = 0;
-        int upperBound = 100;
+        int start = 1; // should start at 1
+        int sum = 0; // variable to store the sum of the numbers
+        final int upperBound = 100;
 
-        while(start++ < upperBound) {
+        while(start++ <= upperBound) {
             sum+=start;
         }
         System.out.println(sum);
